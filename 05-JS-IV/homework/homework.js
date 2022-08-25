@@ -38,6 +38,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+
   var producto = objetoMisterioso['numeroMisterioso'] * 5;
   return producto;
 }
@@ -55,6 +56,7 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+
   var usuario = {
     nombre: nombre,
     email: email,
@@ -93,11 +95,11 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-if(usuario["password"] === password){
+if(usuario.password === password){
   return true;
 }else{
   return false;
-}
+} 
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -153,6 +155,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  
   var descuento = 0;
   var final = 0;
   producto.calcularPrecioDescuento = function(){
